@@ -25,87 +25,96 @@
         <a class="get-quote-button" href="#quote-calculator">Get a Quote</a>
         <p class="encouraging-text">Get prototyping faster and cheaper, without loosing quality.</p>
     </div>
-    <div id="quote-calculator">
-        <div id="what-div">
-            <h2>What do you need?</h2>
-            <div id="first-quote-question-div" class="quote-question-div">
-                <button class="quote-question-button" id="single-prototype-button">
-                    Single Prototype
-                    <span class="popup">Ideal for testing a single design concept.</span>
-                </button>
-                <button class="quote-question-button" id="fusion-modeling-button">
-                    Fusion Modeling
-                    <span class="popup">Just the 3D modeling/design part.</span>
-                </button>
-                <button class="quote-question-button" id="multiple-prototype-button">
-                    Multiple Prototypes
-                    <span class="popup">Ideal for multi prototype product development.</span>
-                </button>
-            </div>
-        </div>
-        <div id="how-complex-div">
-            <h2>How complex is your product?</h2>
-            <div id="complexity-quote-question-div" class = "quote-question-div">
-                <button class="quote-question-button" id="simple-prototype-button">Simple Prototype</button>
-                <button class="quote-question-button" id="mid-prototype-button">Detailed Prototype</button>
-                <button class="quote-question-button" id="complex-prototype-button">Complex Prototype</button>
-            </div>
-        </div>
-        <div id="package-size-div">
-            <h2>What size of package do you need?</h2>
-            <div id="package-size-question-div" class = "quote-question-div">
-                <button class="quote-question-button" id="small-package-button">Small package</button>
-                <button class="quote-question-button" id="medium-package-button">Medium package</button>
-                <button class="quote-question-button" id="large-package-button">Large package</button>
-            </div>
-        </div>
 
-        <div id="quote-result-div">
-            <div id="quote-result-inner-div" class = "quote-question-div">
-                <h2>Your quote is:</h2>
-                <p id="quote-result">0</p>
-                <button id="contact-quote-button" >Contact</button>
-        </div>  
-    </div>
-
-    <br>
-    <br>
-
-    <div id="plan-comparison">
-        <h2>Compare Our Plans</h2>
-        <table class="plan-table">
-            <thead>
-                <tr>
-                    <th>Service</th>
-                    <th>Why?</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Fusion modeling service</td>
-                    <td>Just the 3D modeling/design part.</td>
-                    <td>300 - 500 NOK/hour</td>
-                </tr>
-                <tr>
-                    <td>One time prototype</td>
-                    <td>Ideal for testing a single design concept.</td>
-                    <td>Simple Prototype: 1 500 - 2 500 NOK<br>Detailed Prototype: 5 000 - 8 000 NOK<br>Complex Prototype: 12 000 - 15 000 NOK</td>
-                </tr>
-                <tr>
-                    <td>Prototype service subscription</td>
-                    <td>Ideal for multi prototype product development.</td>
-                    <td>Small package: 1 500 NOK/month<br>Medium package: 4 500 NOK/month<br>Large package: 12 000 NOK/month</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="content-container">
+        <div id="about-us">
+            <h2>About Us</h2>
+            <p>Leveraging our exclusive access to Elvebakken VGS Makerspace, we design and produce 3D-printed prototypes for startups. <br><br>Our network consists of over 25 3D-printers interconnected by our custom-built software.</p>
+        </div>
         
+        <div id="plan-comparison">
+            <h2>Compare Our Plans</h2>
+            <table class="plan-table">
+                <thead>
+                    <tr>
+                        <th colspan="3">Services</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fusion modeling</td>
+                        <td>One time</td>
+                        <td>300 - 500 NOK/hour</td>
+                    </tr>
+                    <tr>
+                        <td>Prototype</td>
+                        <td>One time</td>
+                        <td>Simple Prototype: 1 500 - 2 500 NOK<br>Detailed Prototype: 5 000 - 8 000 NOK<br>Complex Prototype: 12 000 - 15 000 NOK</td>
+                    </tr>
+                    <tr>
+                        <td>Prototype</td>
+                        <td>Subscription</td>
+                        <td>Small package: 1 500 NOK/month<br>Medium package: 4 500 NOK/month<br>Large package: 12 000 NOK/month</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="quote-calculator">
+            <div id="what-div">
+                <h2>What do you need?</h2>
+                <div id="first-quote-question-div" class="quote-question-div">
+                    <div class="quote-question-container">
+                        <button class="quote-question-button" id="single-prototype-button">
+                            Single Prototype
+                            <span class="popup">Ideal for testing a single design concept.</span>
+                        </button>
+                    </div>
+                    <div class="quote-question-container">
+                        <button class="quote-question-button" id="fusion-modeling-button">
+                            Fusion Modeling
+                            <span class="popup">Just the 3D modeling/design part.</span>
+                        </button>
+                    </div>
+                    <div class="quote-question-container">
+                        <button class="quote-question-button" id="multiple-prototype-button">
+                            Multiple Prototypes
+                            <span class="popup">Ideal for multi prototype product development.</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="how-complex-div">
+                <h2>How complex is your product?</h2>
+                <div id="complexity-quote-question-div" class = "quote-question-div">
+                    <button class="quote-question-button" id="simple-prototype-button">Simple Prototype</button>
+                    <button class="quote-question-button" id="mid-prototype-button">Detailed Prototype</button>
+                    <button class="quote-question-button" id="complex-prototype-button">Complex Prototype</button>
+                </div>
+            </div>
+            <div id="package-size-div">
+                <h2>What size of package do you need?</h2>
+                <div id="package-size-question-div" class = "quote-question-div">
+                    <button class="quote-question-button" id="small-package-button">Small package</button>
+                    <button class="quote-question-button" id="medium-package-button">Medium package</button>
+                    <button class="quote-question-button" id="large-package-button">Large package</button>
+                </div>
+            </div>
+
+            <div id="quote-result-div">
+                <div id="quote-result-inner-div" class = "quote-question-div">
+                    <h2>Your quote is:</h2>
+                    <p id="quote-result">0</p>
+                    <button id="contact-quote-button" >Contact</button>
+                </div>  
+            </div>
+        </div>
     </div>
 
-    <div id="bottom-contact-div">
-        <div style="display: flex; flex-direction: row;"><img src="assets/imgs/logo.png" alt="Logo" class="logo"><h4>Printify Prototypes</h4></div>
+    <footer id="bottom-contact-div">
+        <div style="display: flex; flex-direction: row;"><img src="assets/imgs/logo.png" alt="Logo" class="logo"><h4>Printify Prototypes © .</h4><h4 id="footer-more-info">tlf: +47 000 00 000 | Vestre Elvebakke 3, 0182 Oslo</h4></div>
         <a href="mailto:Printify.UB@gmail.com" id="contact-us-button">Contact us</a>
-    </div>
+    </footer>
     <script src="script/quote_calculator.js"></script>    
 </body>
 </html>

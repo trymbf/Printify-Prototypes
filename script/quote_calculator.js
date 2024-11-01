@@ -131,3 +131,34 @@ contact_button.addEventListener('click', function() {
     const mailtoLink = `mailto:Printify.UB@gmail.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
 });
+
+const buttons = document.querySelectorAll('.quote-question-button');
+
+buttons.forEach(button => {
+    button.addEventListener('mouseenter', function() {
+        const popup = this.querySelector('.popup');
+        const rect = popup.getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+
+        if (rect.right > viewportWidth) {
+            popup.style.left = 'auto';
+            popup.style.right = '0';
+            popup.style.marginLeft = '0';
+        } else if (rect.left < 0) {
+            popup.style.left = '0';
+            popup.style.right = 'auto';
+            popup.style.marginLeft = '0';
+        } else {
+            popup.style.left = '50%';
+            popup.style.right = 'auto';
+            popup.style.marginLeft = '-100px';
+        }
+    });
+
+    button.addEventListener('mouseleave', function() {
+        const popup = this.querySelector('.popup');
+        popup.style.left = '50%';
+        popup.style.right = 'auto';
+        popup.style.marginLeft = '-100px';
+    });
+});
