@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/quote_calculator.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Printify Prototypes: Home</title>
 </head>
@@ -11,11 +12,8 @@
     <header>
         <nav>
             <ul class="navbar">
-                <li class="logo-toggle"><img class="logo" src="assets/imgs/logo.png" alt="Logo"></li>
-                <li><a href="#home" id="name-nav-element">Printify Prototypes</a></li>
-                <li><a href="#about" id="about-nav-element">About</a></li>
-                <li><a href="#services" id="services-nav-element">Services</a></li>
-                <li><a href="#quote" id="quote-nav-element">Get a quote</a></li>
+                <li><a href="/" id="name-nav-element"><img class="logo" src="assets/imgs/logo.png" alt="Logo">Printify Prototypes</a></li>
+                <li><a href="/index.html#quote-calculator" id="quote-nav-element">Get a quote</a></li>
             </ul>
         </nav>
     </header>
@@ -23,5 +21,91 @@
         <img class="full-screen-img" src="assets/imgs/temp_bg.png">
         <div class="overlay"></div>
     </div>
+    <div class="get-quote-container">
+        <a class="get-quote-button" href="#quote-calculator">Get a Quote</a>
+        <p class="encouraging-text">Get prototyping faster and cheaper, without loosing quality.</p>
+    </div>
+    <div id="quote-calculator">
+        <div id="what-div">
+            <h2>What do you need?</h2>
+            <div id="first-quote-question-div" class="quote-question-div">
+                <button class="quote-question-button" id="single-prototype-button">
+                    Single Prototype
+                    <span class="popup">Ideal for testing a single design concept.</span>
+                </button>
+                <button class="quote-question-button" id="fusion-modeling-button">
+                    Fusion Modeling
+                    <span class="popup">Just the 3D modeling/design part.</span>
+                </button>
+                <button class="quote-question-button" id="multiple-prototype-button">
+                    Multiple Prototypes
+                    <span class="popup">Ideal for multi prototype product development.</span>
+                </button>
+            </div>
+        </div>
+        <div id="how-complex-div">
+            <h2>How complex is your product?</h2>
+            <div id="complexity-quote-question-div" class = "quote-question-div">
+                <button class="quote-question-button" id="simple-prototype-button">Simple Prototype</button>
+                <button class="quote-question-button" id="mid-prototype-button">Detailed Prototype</button>
+                <button class="quote-question-button" id="complex-prototype-button">Complex Prototype</button>
+            </div>
+        </div>
+        <div id="package-size-div">
+            <h2>What size of package do you need?</h2>
+            <div id="package-size-question-div" class = "quote-question-div">
+                <button class="quote-question-button" id="small-package-button">Small package</button>
+                <button class="quote-question-button" id="medium-package-button">Medium package</button>
+                <button class="quote-question-button" id="large-package-button">Large package</button>
+            </div>
+        </div>
+
+        <div id="quote-result-div">
+            <div id="quote-result-inner-div" class = "quote-question-div">
+                <h2>Your quote is:</h2>
+                <p id="quote-result">0</p>
+                <button id="contact-quote-button" >Contact</button>
+        </div>  
+    </div>
+
+    <br>
+    <br>
+
+    <div id="plan-comparison">
+        <h2>Compare Our Plans</h2>
+        <table class="plan-table">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Why?</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fusion modeling service</td>
+                    <td>Just the 3D modeling/design part.</td>
+                    <td>300 - 500 NOK/hour</td>
+                </tr>
+                <tr>
+                    <td>One time prototype</td>
+                    <td>Ideal for testing a single design concept.</td>
+                    <td>Simple Prototype: 1 500 - 2 500 NOK<br>Detailed Prototype: 5 000 - 8 000 NOK<br>Complex Prototype: 12 000 - 15 000 NOK</td>
+                </tr>
+                <tr>
+                    <td>Prototype service subscription</td>
+                    <td>Ideal for multi prototype product development.</td>
+                    <td>Small package: 1 500 NOK/month<br>Medium package: 4 500 NOK/month<br>Large package: 12 000 NOK/month</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+
+    <div id="bottom-contact-div">
+        <div style="display: flex; flex-direction: row;"><img src="assets/imgs/logo.png" alt="Logo" class="logo"><h4>Printify Prototypes</h4></div>
+        <a href="mailto:Printify.UB@gmail.com" id="contact-us-button">Contact us</a>
+    </div>
+    <script src="script/quote_calculator.js"></script>    
 </body>
 </html>

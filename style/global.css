@@ -1,6 +1,27 @@
 body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
+    background-color: #2e2e2e;
+    background: linear-gradient(270deg, #464747, #2a2f33, #424242);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .navbar {
@@ -8,7 +29,7 @@ body {
     margin: 0;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #333;
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat to navbar */
     position: relative;
@@ -21,6 +42,10 @@ body {
 #name-nav-element {
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.logo {
+    margin-right: 20px; 
 }
 
 #quote-nav-element {
@@ -78,6 +103,60 @@ body {
     height: 55px;
 }
 
+.encouraging-text {
+    font-size: 1.2rem;
+    margin-top: 40px;
+    color: #e7e7e7;
+}
+
+.get-quote-button {
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Add margin to create space */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.get-quote-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#contact-us-button {
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#contact-us-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#bottom-contact-div {
+    background-color: #333;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 1000px) {
@@ -115,3 +194,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #999;
 }
+

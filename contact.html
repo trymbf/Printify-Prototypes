@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" id="name-nav-element"><img class="logo" src="assets/imgs/logo.png" alt="Logo">Printify Prototypes</a></li>
+                <li><a href="index.html#contact" id="about-nav-element">Contact</a></li>
+                <li><a href="index.html#services" id="services-nav-element">Services</a></li>
+                <li><a href="index.html#quote-calculator" id="quote-nav-element">Get a quote</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-section">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <script src="script/contact.js"></script>
+</body>
+</html>
