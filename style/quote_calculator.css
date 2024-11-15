@@ -140,7 +140,7 @@
 
 .plan-table th, .plan-table td {
     padding: 15px;
-    text-align: center;
+    text-align: left;
     width: 33.33%; /* Make all columns the same width */
     border: 1px solid #555; /* Add border */
 }
